@@ -6,27 +6,57 @@
       "type": "modifyHeaders",
       "requestHeaders": [
         {
-          "header": "User-Agent",
+          "header": "sec-ch-ua",
           "operation": "set",
-          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/237.84.2.178 Safari/537.36"
-        }
-      ]
-    },
-    "condition": { "resourceTypes": ["main_frame"], "urlFilter": "||facebook.com/" }
-  },
-  {
-    "id": 2,
-    "priority": 1,
-    "action": {
-      "type": "modifyHeaders",
-      "requestHeaders": [
+          "value": "\"Microsoft Edge\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+        },
+        {
+          "header": "sec-ch-ua-full-version-list",
+          "operation": "set",
+          "value": "\"Microsoft Edge\";v=\"135.0.3179.85\", \"Not-A.Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"135.0.7049.96\""
+        },
+        {
+          "header": "sec-ch-ua-mobile",
+          "operation": "set",
+          "value": "?0"
+        },
+        {
+          "header": "sec-ch-ua-model",
+          "operation": "set",
+          "value": ""
+        },
+        {
+          "header": "sec-ch-ua-platform",
+          "operation": "set",
+          "value": "Windows"
+        },
+        {
+          "header": "sec-ch-ua-platform-version",
+          "operation": "set",
+          "value": "19.0.0"
+        },
+        {
+          "header": "sec-fetch-dest",
+          "operation": "set",
+          "value": "empty"
+        },
+        {
+          "header": "sec-fetch-mode",
+          "operation": "set",
+          "value": "cors"
+        },
+        {
+          "header": "sec-fetch-site",
+          "operation": "set",
+          "value": "same-origin"
+        },
         {
           "header": "User-Agent",
           "operation": "set",
-          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/237.84.2.178 Safari/537.36"
+          "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
         }
       ]
     },
-    "condition": { "resourceTypes": ["main_frame"], "initiatorDomains": ["||facebook.com"] }
+    "condition": { "resourceTypes": ["main_frame", "sub_frame", "xmlhttprequest"] }
   }
 ]
