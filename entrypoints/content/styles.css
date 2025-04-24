@@ -22,10 +22,15 @@
     div.xnjgh8c {
       max-height: none;
     }
-    :is(&.x2lwn1j, div.x2lwn1j):not(.x14qfxbe, .x100vrsf) {
+    :is(&.x2lwn1j, div.x2lwn1j):not(.x14qfxbe, .x100vrsf, .xsdox4t) {
       width: auto;
     }
   }
+}
+
+/* Prevents opening Video feed page when clicking on a playing video */
+.x1lliihq div[role="presentation"] {
+  pointer-events: none;
 }
 
 /****** fb-clean-my-feeds ******/
