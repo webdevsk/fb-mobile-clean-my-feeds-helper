@@ -1,30 +1,28 @@
-@media (max-width: 600px) {
-  /* Removes min width from image containers */
-  [style*="min-width"] {
-    min-width: auto !important;
-  }
+/* Removes min width from image containers */
+[style*="min-width"] {
+  min-width: auto !important;
+}
 
-  /* Unstickify photo post comments section */
-  div.x1dqk2q1.x1dqk2q1 {
-    max-height: max-content;
-  }
+/* Unstickify photo post comments section */
+div.x1dqk2q1.x1dqk2q1 {
+  max-height: max-content;
+}
 
-  /* Fix video post layout excluding the feed page layout */
-  div:has(> [role="main"]):has(> [role="complementary"]):not(:has(> [role="navigation"])) {
-    flex-direction: column;
+/* Fix video post layout excluding the feed page layout */
+div:has(> [role="main"]):has(> [role="complementary"]):not(:has(> [role="navigation"])) {
+  flex-direction: column;
+}
+div[role="complementary"] {
+  width: auto;
+  & > div.xjabf5u.xjabf5u {
+    position: static;
   }
-  div[role="complementary"] {
+  &.xnjgh8c,
+  div.xnjgh8c {
+    max-height: none;
+  }
+  :is(&.x2lwn1j, div.x2lwn1j):not(.x14qfxbe, .x100vrsf, .xsdox4t) {
     width: auto;
-    & > div.xjabf5u.xjabf5u {
-      position: static;
-    }
-    &.xnjgh8c,
-    div.xnjgh8c {
-      max-height: none;
-    }
-    :is(&.x2lwn1j, div.x2lwn1j):not(.x14qfxbe, .x100vrsf, .xsdox4t) {
-      width: auto;
-    }
   }
 }
 

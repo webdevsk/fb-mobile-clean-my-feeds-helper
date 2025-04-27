@@ -1,3 +1,4 @@
+/** Makes the page Installable PWA compatible */
 export const fullScreenPWA = async () => {
   const manifestNode = document.querySelector<HTMLLinkElement>('link[rel="manifest"]')
   if (!manifestNode) return console.error("Manifest node not found")

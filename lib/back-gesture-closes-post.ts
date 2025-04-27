@@ -1,10 +1,8 @@
+/** Listen for the Android back gesture event and trigger the close button when viewing a post */
 export const backGestureClosesPost = () => {
-  /*
-   * Listen for the Android back gesture event and trigger the close button when viewing a post
-   */
   // This is captured through the 'popstate' event in the browser
 
-  window.addEventListener("popstate", function (event) {
+  window.addEventListener("popstate", (event) => {
     event.preventDefault()
 
     // Find the element with aria-label="Close"
